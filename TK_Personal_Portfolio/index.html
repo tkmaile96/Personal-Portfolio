@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;900&family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800">
+  <!-- Navbar -->
+  <header class=" shadow  fixed w-full z-50 bg-gray-800 border-b-2 border-teal-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-teal-300"><a href="#"><i class='bx bx-home' ></i>TK Maile</a></h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#About_Me" class="text-teal-200 hover:text-gray-200"><span class="text-white">#</span>About</a>
+        <a href="#My_Skills" class="text-teal-200 hover:text-gray-200"><span class="text-white">#</span>Skills</a>
+        <a href="#My_Projects" class="text-teal-200 hover:text-gray-200"><span class="text-white">#</span>Projects</a>
+        <a href="#Contact_me" class="text-teal-200 hover:text-gray-200"><span class="text-white">#</span>Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden p-2 text-teal-100">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-800 shadow md:hidden">
+      <a href="#home" class="block px-4 py-2 text-teal-300 hover:bg-teal-700"><span class="text-white">#</span>Home</a>
+      <a href="#About_Me" class="block px-4 py-2 text-teal-300 hover:bg-teal-700"><span class="text-white">#</span>About</a>
+      <a href="#My_Skills" class="block px-4 py-2 text-teal-300 hover:bg-teal-700"><span class="text-white">#</span>Skills</a>
+      <a href="#My_Projects" class="block px-4 py-2 text-teal-300 hover:bg-teal-700"><span class="text-white">#</span>Projects</a>
+      <a href="#Contact_Me" class="block px-4 py-2 text-teal-300 hover:bg-teal-700"><span class="text-white">#</span>Contact</a>
+    </div>
+  </header>
+         <!--Introduction Section-->
+         <section>
+          <div class="flex flex-col md:flex-row items-center justify-center h-screen pt-12">
+            <div class="p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+              <div class="relative">
+                  <img src="/Images/TK.png" alt="profile image" class="h-64 w-auto rounded-lg border-2 border-gray-400 shadow-lg">
+                  <div class="absolute inset-0 bg-black opacity-20 rounded-lg"></div>
+              </div>
+              <div class="text-center md:text-left z-10">
+                  <h2 class="text-4xl text-teal-400 font-bold">Hello, I'm Tirelo Maile</h2>
+              <p class="text-2xl text-gray-100">A Front-End Dev</p>
+              <p class="italic text-gray-100">Welcome to my portfolio!</p>
+              <button class="bg-teal-300 text-gray-800 font-bold px-6 py-2 mt-4 rounded hover:bg-teal-400">
+                  <a href="https://docs.google.com/document/d/1DAcNQvMP1ym5VUdHCL4kw0H4eMiV50dW/edit?usp=sharing&ouid=101243293484648484472&rtpof=true&sd=true" target="_blank">Resume</a>
+              </button>
+              <button class="bg-teal-300 text-gray-800 font-bold px-6 py-2 mt-4 rounded hover:bg-teal-400">
+                  <a href="#Contact_Me">Contacts</a>
+              </button>
+
+               <!-- Social Links -->
+          <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BZ%2FQUXjndQISE%2FaHQzvNwBg%3D%3D" target="_blank" class="text-blue-600 hover:text-teal-400" aria-label="LinkedIn Profile">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M4.983 3.5c0-1.355-1.1-2.5-2.484-2.5C1.1 1 0 2.145 0 3.5s1.1 2.5 2.499 2.5c1.381 0 2.484-1.145 2.484-2.5zM0 24h4.965V8H0v16zM7.781 8h4.657v2.293h.065c.653-1.239 2.253-2.293 4.621-2.293 4.946 0 5.876 3.17 5.876 7.293V24h-4.964v-7.965c0-1.895-.033-4.33-2.637-4.33-2.638 0-3.043 2.057-3.043 4.182V24H7.781V8z"/>
+                  </svg>
+              </a>
+              <a href="https://github.com/tkmaile96" target="_blank" class="text-teal-300 hover:text-teal-400" aria-label="Github profile">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577 0-.287-.011-1.041-.016-2.045-3.338.724-4.042-1.611-4.042-1.611-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.73.083-.73 1.204.085 1.837 1.237 1.837 1.237 1.07 1.834 2.807 1.304 3.492.996.108-.775.419-1.305.762-1.605-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.123-.303-.536-1.521.117-3.167 0 0 1.008-.322 3.301 1.23a11.494 11.494 0 0 1 3.003-.403c1.018.005 2.045.137 3.003.403 2.293-1.552 3.299-1.23 3.299-1.23.654 1.646.241 2.864.118 3.167.769.84 1.236 1.911 1.236 3.221 0 4.61-2.807 5.625-5.478 5.92.431.371.815 1.103.815 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.192.694.8.576C20.565 21.8 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+              </a>
+          </div>
+              </div>
+          </div>
+          </div>  
+        </section>
+
+<!-- About Section -->
+<section id="About_Me" class="bg-gray-700 py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start">
+      <!-- About Text -->
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-4">About Me</h2>
+        <p class="text-1.9xl text-gray-100 leading-relaxed mb-6">
+          Hi, I'm Tirelo, a motivated and proactive individual with a foundation in software development, always eager to deepen my knowledge and skills in the field.
+          My interest in how web applications, Mobile applications are programmed led me to explore coding, where I continue to develop my expertise
+          and learn new technologies.I love bringing ideas to life through
+          code and solving real-world problems with elegant solutions. I look forward to collaborating with others as I progress in this journey.
+        </p>
+        <p class="text-1.9xl text-gray-100 leading-relaxed">
+          In addition to programming, I have a background as a teacher and tutor, specializing in mathematics and English.
+          Outside of work, I enjoy watching football, Movies and anime.
+        </p>
+      </div>
+      <!-- About Image -->
+      <div class="md:w-1/2 flex justify-center">
+        <img src="./Images/TK-02.jpg" alt="About Me" class="rounded-lg shadow-lg w-80 md:w-96 object-cover">
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 mt-4 justify-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-xl font-semibold text-blue-500">0+</h3>
+          <p class="text-sm text-gray-100">Years of Experience</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-xl font-semibold text-blue-500">10+</h3>
+          <p class="text-sm text-gray-100">Projects Completed</p>
+        </div>
+      </div>
+      
+  </section>
+
+
+  <!-- Skills Section -->
+<section id="My_Skills" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-8">My Skills</h2>
+      <!-- Skill Categories -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Skill Card -->
+        <div class="p-6 bg-gray-700 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-blue-500 mb-4">Frontend Development</h3>
+          <ul class=" text-gray-100 space-x-2 flex flex-wrap">
+            <li class="text-orange-500 text-6xl"><i class='bx bxl-html6'></i></li> <!-- HTML -->
+            <li class="text-blue-600 text-6xl"><i class='bx bxl-css3'></i></li> <!-- CSS -->
+            <li class="text-yellow-600 text-6xl"><i class='bx bxl-javascript'></i></li> <!-- JavaScript -->
+            <li class="text-blue-600 text-6xl"><i class='bx bxl-react'></i></li> <!-- React -->
+            <li class="text-teal-600 text-6xl"><i class='bx bxl-tailwind-css'></i></li> <!-- TailwindCSS -->
+            <li class="text-purple-600 text-6xl"><i class='bx bxl-bootstrap'></i></li> <!-- Bootstrap -->
+            <li class="text-blue-600 text-6xl"><i class='bx bxl-typescript'></i></li> <!-- TypeScript -->
+            <li class="text-pink-600 text-6xl"><i class='bx bxl-sass'></i></li> <!-- SASS -->
+            <li class="text-purple-700 text-6xl"><i class='bx bxl-redux'></i></li> <!-- Redux -->
+          </ul>
+        </div>
+        <!-- Another Skill Card -->
+        <div class="p-6 bg-gray-700 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-green-500 mb-4">Backend Development</h3>
+          <ul class="text-gray-100 space-x-2 flex flex-wrap">
+            <li class="text-green-600 text-6xl"><i class='bx bxl-nodejs'></i></li> <!-- Node.js -->
+            <li class="text-yellow-600 text-6xl"><i class='bx bxl-firebase'></i></li> <!-- Firebase -->
+            <li class="text-purple-700 text-6xl"><i class='bx bx-cloud-download'></i></li> <!-- REST API -->
+            <li class="text-purple-700 text-6xl"><i class='bx bx-code-alt'></i></li> <!-- Handlebars -->
+            
+          </ul>
+        </div>
+        <!-- Another Skill Card -->
+        <div class="p-6 bg-gray-700 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-yellow-500 mb-4">Tools & Platforms</h3>
+          <ul class="text-gray-100 space-x-2 flex flex-wrap">
+            <li class="text-orange-600 text-6xl"><i class='bx bxl-git'></i></li> <!-- Git -->
+            <li class="text-gray-600 text-6xl"><i class='bx bxl-github'></i></li> <!-- GitHub -->
+            <li class="text-blue-800 text-6xl"><i class='bx bxl-wordpress'></i></li> <!-- WordPress --> 
+            <li class="text-purple-700 text-6xl"><i class='bx bxl-figma'></i></li> <!-- Figma -->
+            <li class="text-purple-700 text-6xl"><i class='bx bxl-visual-studio'></i></li> <!-- VS Code -->
+            <li class="text-green-600 text-6xl"><i class='bx bxl-netlify'></i></li> <!-- Netlify -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Projects Section -->
+<section id="My_Projects" class="bg-gray-700 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-8">My Projects</h2>
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <img src="/Images/memory game.png" alt="Project 1" class="rounded-t-lg">
+          <div class="p-4 bg-gray-800">
+            <h3 class="text-center text-xl font-semibold text-blue-500">Memory Game</h3>
+            <p class="text-gray-100 mt-2">This is a timed, Naruto-themed memory game with a countdown timer and win or lose conditions</p>
+            <a href="https://tkmaile96.github.io/Memory-Game/" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Live App</a>
+            <a href="https://github.com/tkmaile96/Memory-Game.git" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Repository</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <img src="/Images/Add to Cart.png" alt="Project 1" class="rounded-t-lg">
+          <div class="p-4 bg-gray-800">
+            <h3 class="text-center text-xl font-semibold text-green-500">Agile Board</h3>
+            <p class="text-gray-100 mt-2">This application is a task management tool designed to help users visually organize and track tasks through a Kanban board.</p>
+            <a href="https://tkmaile96.github.io/Agile-Board/" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Live App</a>
+            <a href="https://github.com/tkmaile96/Agile-Board.git" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Repository</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <img src="/Images/city skyline.png" alt="Project 1" class="rounded-t-lg">
+          <div class="p-4 bg-gray-800">
+            <h3 class="text-center text-xl font-semibold text-orange-500">City Skyliner</h3>
+            <p class="text-gray-100 mt-2">A responsive City skylines project, where we switch between night and day in different screen sizes.</p>
+            <a href="#" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Live App</a>
+            <a href="#" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Repository</a>
+          </div>
+        </div>
+        <!-- <div class="bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <img src="/Images/profile-flip (1).png" alt="Project 1" class="rounded-t-lg">
+          <div class="p-4 bg-gray-800">
+            <h3 class="text-center text-xl font-semibold text-red-500">Profile Card</h3>
+            <p class="text-gray-100 mt-2">Student profile card, with a hover effect to see the back end of the card details.</p>
+            <a href="#" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Live App</a>
+            <a href="#" target="_blank" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm font-medium">Repository</a>
+          </div>
+        </div> -->
+       
+        <!-- Add More Cards as Needed -->
+      </div>
+    </div>
+  </section>
+    
+<!-- Contact Section -->
+<section id="Contact_me" class=" py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-8">Contact Me</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+        <!-- Contact Form -->
+        <form action="https:tkmaile96@gmail.com" method="POST" class="w-full md:w-1/2 bg-gray-700 p-8 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-100 font-medium mb-2">Your Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 bg-gray-600 text-gray-200">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-100 font-medium mb-2">Your Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 bg-gray-600 text-gray-200">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-100 font-medium mb-2">Your Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 bg-gray-600 text-gray-200"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-teal-500 hover:bg-teal-800 text-white font-medium py-2 px-4 rounded-lg">Send Message</button>
+        </form>
+        <!-- Contact Information -->
+        <div class="w-full md:w-1/3 text-center">
+          <p class="text-lg text-gray-100 mb-4">Feel free to reach out through my email, phone or text on whatsapp number below.</p>
+          <div class="flex space-x-3 items-center justify-center">
+            <p class="text-gray-100 font-medium"> <a href="mailto:tkmaile96@gmail.com" class="text-red-500 hover:gray-300"><i class='bx bxl-gmail text-4xl hover:border border-gray-400 rounded-lg'></i></a></p>
+            <p class="text-gray-100 font-medium"> <a href="tel:+27746226219" class="text-blue-500 hover:underline"><i class='bx bxs-phone-call text-4xl hover:border border-gray-400 rounded-lg'></i></a></p>
+            <p class="text-gray-100 font-medium"> <a href="tel:+27746226219" class="text-green-500 hover:underline"><i class='bx bxl-whatsapp text-4xl hover:border border-gray-400 rounded-lg'></i></a></p>
+          </div>
+          <p class="mt-6 text-sm text-gray-100">I'll get back to you as soon as possible!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+</body>
+</html>

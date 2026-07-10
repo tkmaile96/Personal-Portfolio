@@ -1,0 +1,14 @@
+{
+  "name": "TK Maile Portfolio",
+  "short_name": "TK Portfolio",
+  "icons": [
+    {
+      "src": "./Images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "display": "standalone"
+}
